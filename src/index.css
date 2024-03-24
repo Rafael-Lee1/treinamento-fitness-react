@@ -1,0 +1,38 @@
+/* styles.css */
+
+/* Estilos para o corpo da página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+}
+
+/* Estilos para o contêiner da lista de exercícios */
+.lista-de-exercicios {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que os itens se movam para a próxima linha */
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os vídeos */
+}
+
+/* Estilos para o contêiner do vídeo */
+.exercicio > div {
+    width: 300px; /* Largura do contêiner do vídeo */
+    height: 200px; /* Altura do contêiner do vídeo */
+    border: 1px solid #ccc; /* Adicione uma borda para separar visualmente os vídeos */
+    border-radius: 5px; /* Adicione cantos arredondados para uma aparência mais suave */
+    overflow: hidden; /* Evite que o vídeo ultrapasse os limites do contêiner */
+}
+
+/* Estilos para o vídeo */
+.exercicio video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste o vídeo para preencher o contêiner */
+}
